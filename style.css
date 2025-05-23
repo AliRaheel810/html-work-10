@@ -1,0 +1,258 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    background-color: #f9f9f9;
+    height: 1000px;
+}
+
+header {
+    background-color: #ffffff;
+    color: #0f0f0f;
+    padding: 15px 20px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 100;
+    height: 50px;
+}
+
+.logo {
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff0000;
+    line-height: 50px;
+}
+
+.logo i {
+    margin-right: 8px;
+    color: #606060;
+}
+
+.search-bar {
+    float: left;
+    margin: 0px 20px;
+    width: 600px;
+    padding-top: 10px;
+}
+
+.search-bar input[type="text"] {
+    width: 480px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 2px 0px 0px 2px;
+    font-size: 16px;
+    height: 20px;
+    float: left;
+}
+
+.search-bar button {
+    background-color: #f8f8f8;
+    border: 1px solid #cccccc;
+    border-left: none;
+    padding: 10px 15px;
+    border-radius: 0px 2px 2px 0px;
+    cursor: pointer;
+    height: 42px;
+    float: left;
+}
+
+.search-bar button i {
+    color: #606060;
+}
+
+.user-actions {
+    float: right;
+    padding-top: 10px;
+}
+
+.user-actions i {
+    font-size: 21px;
+    margin-left: 20px;
+    color: #606060;
+    cursor: pointer;
+}
+
+.user-profile {
+    float: right;
+    margin-left: 20px;
+    padding-top: 5px;
+}
+
+.user-profile i {
+    font-size: 32px;
+    color: #606060;
+}
+
+.sidebar {
+    width: 240px;
+    background-color: #ffffff;
+    padding-top: 70px;
+    height: 900px;
+    overflow-y: auto;
+    padding-left: 15px;
+    box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.1);
+    float: left;
+}
+
+.sidebar.collapsed {
+    width: 70px;
+}
+
+.sidebar-item {
+    padding: 10px 15px;
+    color: #0f0f0f;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-right: 15px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.sidebar-item.active {
+    background-color: #e5e5e5;
+    font-weight: bold;
+}
+
+.sidebar-item i {
+    margin-right: 15px;
+    font-size: 19px;
+    color: #606060;
+    min-width: 24px;
+    text-align: center;
+    float: left;
+}
+
+.sidebar hr {
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    margin: 15px 0px;
+}
+
+.content {
+    padding: 20px;
+    padding-top: 90px;
+    background-color: #f9f9f9;
+    margin-left: 255px;
+    min-height: 900px;
+}
+
+.content.sidebar-collapsed {
+    margin-left: 85px;
+}
+
+.video-grid {
+    overflow: hidden;
+}
+
+.video-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    width: 340px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.video-thumbnail {
+    position: relative;
+}
+
+.video-thumbnail img {
+    width: 100%;
+    display: block;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.video-duration {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    padding: 4px 6px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.video-info {
+    padding: 15px;
+    overflow: hidden;
+}
+
+.channel-avatar {
+    margin-right: 15px;
+    float: left;
+}
+
+.circular-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.video-details {
+    overflow: hidden;
+}
+
+.video-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    line-height: 1.4;
+    color: #0f0f0f;
+}
+
+.channel-name {
+    font-size: 14px;
+    color: #606060;
+    margin-bottom: 3px;
+}
+
+.video-stats {
+    font-size: 13px;
+    color: #606060;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+
+    .content {
+        padding-top: 70px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 0px;
+    }
+
+    .content.sidebar-collapsed {
+        margin-left: 0px;
+    }
+
+    .search-bar {
+        margin: 0px 10px;
+        width: 400px;
+    }
+
+    .search-bar input[type="text"] {
+        width: 300px;
+    }
+
+    .user-actions,
+    .user-actions i,
+    .user-profile i {
+        margin-left: 10px;
+    }
+
+    .video-card {
+        width: 280px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+}
